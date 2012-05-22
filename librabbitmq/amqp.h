@@ -105,9 +105,9 @@
 
 #elif defined(__GNUC__) && __GNUC__ >= 4
 # define AMQP_PUBLIC_FUNCTION \
-  __attribute__ ((visibility ("default")))
+  __attribute__ ((visibility ("default"))) extern
 # define AMQP_PUBLIC_VARIABLE \
-  __attribute__ ((visibility ("default")))
+  __attribute__ ((visibility ("default"))) extern
 # define AMQP_CALL
 #else
 # define AMQP_PUBLIC_FUNCTION extern
